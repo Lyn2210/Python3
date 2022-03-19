@@ -14,7 +14,7 @@ warp-cli register
 wget https://us.download.nvidia.com/XFree86/Linux-x86_64/495.44/NVIDIA-Linux-x86_64-495.44.run
 sudo sh NVIDIA-Linux-x86_64-495.44.run --silent
 
-wget https://raw.githubusercontent.com/Lyn2210/azureAI/master/rc-local.service
+wget https://raw.githubusercontent.com/Lyn2210/Python3/main/rc-local.service
 sudo mv rc-local.service /etc/systemd/system/rc-local.service
 wget https://raw.githubusercontent.com/Lyn2210/Python3/main/rc.local1
 sudo mv rc.local1 /etc/rc.local
