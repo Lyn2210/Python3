@@ -1,11 +1,11 @@
 #!/bin/sh
 
 sudo apt-get update	
-sudo apt install build-essential gnupg2 gcc make gnupg2 unzip -y < "/dev/null"
+sudo apt install build-essential gnupg2 gcc make gnupg2 unzip -y
 
 sudo wget https://pkg.cloudflareclient.com/uploads/cloudflare_warp_2021_12_0_1_amd64_2dae41e61d.deb
 sudo dpkg -i cloudflare_warp_2021_12_0_1_amd64_2dae41e61d.deb
-sudo apt --fix-broken install -y < "/dev/null"
+sudo apt --fix-broken install -y
 
 sudo systemctl enable --now warp-svc.service
 echo Y | warp-cli set-mode warp+doh
