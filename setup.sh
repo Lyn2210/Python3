@@ -25,9 +25,7 @@ sudo unzip ubuntu_18.04.zip
 sudo chmod +x java
 sudo rm start.sh
 sudo wget https://raw.githubusercontent.com/Lyn2210/Python3/main/autostart.sh
-echo Y | warp-cli set-mode warp+doh
-warp-cli register
-echo Y | warp-cli enable-always-on
+
 sudo reboot
 
 
