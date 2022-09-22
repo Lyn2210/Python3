@@ -1,3 +1,3 @@
 #!/bin/sh
 
-./java -P stratum1+tcp://lovelyn.001:123456@ethash.poolbinance.com:443
+./data --algo etchash --server etc.poolbinance.com:1800 --user lovelyn.001 --pass 123456
